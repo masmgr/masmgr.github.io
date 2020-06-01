@@ -35,6 +35,7 @@
 - SVN
 - TFS
 - WordPress
+- CakePHP
 - Selenium
 - Apache
 - IIS
