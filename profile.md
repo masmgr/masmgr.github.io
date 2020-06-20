@@ -7,6 +7,7 @@
 ## 言語	
 - C#
 - Javascript
+- Typescript
 - T-SQL
 - Powershell
 - VBScript
@@ -23,15 +24,17 @@
     - ASP.NET MVC
 - Javascript
   - jQuery
-  - Angular	
+  - Angular
  
 ## DB
 - SQL Server
-- MySQL	10年
+- MySQL
+- SQLite
 
 ## その他ミドルウェア、サーバー等
 - AWS
 - Git
+- Gitlab
 - SVN
 - TFS
 - WordPress
@@ -39,6 +42,7 @@
 - Selenium
 - Apache
 - IIS
+- Docker
 
 # 取得資格等
 - 2005年2月	普通運転免許(AT限定)
