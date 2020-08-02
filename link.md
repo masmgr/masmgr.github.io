@@ -7,6 +7,10 @@
 - [Java](https://www.java.com/)
 - [Ruby](https://www.ruby-lang.org/)
 - [Python](https://www.python.org/)
+- [C](http://www.open-std.org/jtc1/sc22/wg14/)
+- [C++](https://isocpp.org/)
+- [PHP](https://www.php.net/)
+- [Perl](https://www.perl.org/)
 - Javascript
   - [MDN](Javascript)
 - [Typescript](https://www.typescriptlang.org/)
@@ -14,6 +18,15 @@
 - [Dart](https://dart.dev/)
 - SQL
   - [T-SQL](https://docs.microsoft.com/ja-jp/sql/t-sql/language-reference?view=sql-server-ver15)
+- [Scala](https://www.scala-lang.org/)
+- [Ocaml](https://ocaml.org/)
+- [Haskell](https://www.haskell.org/)
+- [Elixer](https://elixir-lang.jp/)
+- [Elm](https://elm-lang.org/)
+- Prolog
+  - [SWI Prolog](https://www.swi-prolog.org/)
+- Common Lisp
+- Schema
 
 ## ライブラリ
 
@@ -90,6 +103,16 @@
 
 ### 継続的インスペクション
 - [SonarQube](https://www.sonarqube.org/)
+
+## コンテナ
+
+- [Docker](https://www.docker.com/)
+- [Kubernates](https://kubernetes.io/ja/docs/concepts/overview/what-is-kubernetes/)
+
+## ミドルウェア
+
+- [Apache](https://httpd.apache.org/)
+- [Nginx](https://nginx.org/en/)
 
 ## パッケージツール
 
