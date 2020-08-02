@@ -38,6 +38,8 @@
 - [メタプログラミング.NET](https://www.amazon.co.jp/dp/B00GZK2I7W)
 - [ASP.NET MVC 5 実践プログラミング](https://www.amazon.co.jp/dp/B00XBF8E9K)
 - [プログラミングASP.NET MVC 第3版 ASP.NET MVC 5対応版](https://www.amazon.co.jp/dp/B019FEQ0AU)
+- [ソフトウェア見積り　人月の暗黙知を解き明かす](https://www.amazon.co.jp/dp/B00KR96M6K)
+- [アジャイルな見積りと計画づくり ~価値あるソフトウェアを育てる概念と技法~](https://www.amazon.co.jp/dp/4839924023)
 
 # 技術以外
 
