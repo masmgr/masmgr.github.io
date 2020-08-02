@@ -35,4 +35,4 @@ https://www.sonarqube.org/developer-edition/
 https://github.com/SonarSource/docker-sonarqube
 
 参考記事
-- (SonarQubeサクッといじってみた)[https://qiita.com/yasumon/items/52702df02aaf6201bf30]
+- [SonarQubeサクッといじってみた](https://qiita.com/yasumon/items/52702df02aaf6201bf30)
