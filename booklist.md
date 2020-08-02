@@ -1,6 +1,6 @@
-# 読んだ本
+# 読書録
 
-# 技術
+## 技術
 
 - [クリーンなコードへのSonarQube即効活用術](https://www.amazon.co.jp/dp/4865942246)
 - [Androidを支える技術〈I〉──60fpsを達成するモダンなGUIシステム](https://www.amazon.co.jp/dp/4774187593)
@@ -41,7 +41,7 @@
 - [ソフトウェア見積り　人月の暗黙知を解き明かす](https://www.amazon.co.jp/dp/B00KR96M6K)
 - [アジャイルな見積りと計画づくり ~価値あるソフトウェアを育てる概念と技法~](https://www.amazon.co.jp/dp/4839924023)
 
-# 技術以外
+## 技術以外
 
 - [LIFE SHIFT](https://www.amazon.co.jp/dp/4492533877)
 - [スタンフォード式 人生デザイン講座](https://www.amazon.co.jp/dp/B07YG1GWWT)
