@@ -32,6 +32,12 @@
 - [わかりやすいパターン認識（第2版）](https://www.amazon.co.jp/dp/B081RPCV99)
 - [言語処理のための機械学習入門 (自然言語処理シリーズ)](https://www.amazon.co.jp/dp/4339027510)
 - [東京大学工学教程 情報工学 機械学習](https://www.amazon.co.jp/dp/4621089919)
+- [体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践](https://www.amazon.co.jp/dp/4797393165)
+- [コーディングを支える技術――成り立ちから学ぶプログラミング作法](https://www.amazon.co.jp/dp/B07JKLS4KM)
+- [エンジニアの知的生産術 ―効率的に学び、整理し、アウトプットする](https://www.amazon.co.jp/dp/B07JFRF6MW)
+- [メタプログラミング.NET](https://www.amazon.co.jp/dp/B00GZK2I7W)
+- [ASP.NET MVC 5 実践プログラミング](https://www.amazon.co.jp/dp/B00XBF8E9K)
+- [プログラミングASP.NET MVC 第3版 ASP.NET MVC 5対応版](https://www.amazon.co.jp/dp/B019FEQ0AU)
 
 # 技術以外
 
@@ -102,4 +108,7 @@
 - [バースト! 人間行動を支配するパターン](https://www.amazon.co.jp/dp/414081554X)
 - [人工知能は人間を超えるか (角川ＥＰＵＢ選書)](https://www.amazon.co.jp/dp/B00UAAK07S)
 
-
+- [みずほ銀行システム統合、苦闘の19年史　史上最大のITプロジェクト「3度目の正直」](https://www.amazon.co.jp/dp/B084QBQDZ3)
+- [システムはなぜダウンするのか](https://www.amazon.co.jp/dp/B00ISP0OM8)
+- [なぜ、システム開発は必ずモメるのか?](https://www.amazon.co.jp/dp/4534051158)
+- [中国新興企業の正体](https://www.amazon.co.jp/dp/B07BWDCNHR)
