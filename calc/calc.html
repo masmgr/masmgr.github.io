@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <link rel="stylesheet" type="text/css" href="./style/calc.css" />
+        <title>電卓</title>
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="display-container">
+                <input
+                    type="text"
+                    id="txtMainDisplay"
+                    value="0."
+                    maxlength="16"
+                    readonly="readonly"
+                />
+            </div>
+            <div id="head-control-container">
+                <div id="memory-display-container">
+                    <input
+                        type="text"
+                        id="txtMemoryDisplay"
+                        value=""
+                        readonly="readonly"
+                    />
+                </div>
+                <div id="reset-container">
+                    <button id="btnBack" name="btnBack" value="Back">
+                        Back
+                    </button>
+                    <button id="btnClearEnter" value="CE">CE</button>
+                    <button id="btnClear" name="btnClear" value="C">C</button>
+                </div>
+            </div>
+            <div id="main-control-container">
+                <div id="memory-container">
+                    <button class="ope2" id="btnMemoryClear" value="MC">
+                        MC
+                    </button>
+                    <button class="ope2" id="btnMemoryRead" value="MR">
+                        MR
+                    </button>
+                    <button class="ope2" id="btnMemoryStore" value="MS">
+                        MS
+                    </button>
+                    <button class="ope2" id="btnMemoryAdd" value="M+">
+                        M+
+                    </button>
+                </div>
+                <div id="operation-container">
+                    <button class="ope1" id="btnNumber7" value="7">7</button>
+                    <button class="ope1" id="btnNumber8" value="8">8</button>
+                    <button class="ope1" id="btnNumber9" value="9">9</button>
+                    <button class="ope2" id="btnDivision" value="/">/</button>
+                    <button class="ope1" id="btnSquareRoot" value="sqrt">
+                        sqrt
+                    </button>
+                    <button class="ope1" id="btnNumber4" value="4">4</button>
+                    <button class="ope1" id="btnNumber5" value="5">5</button>
+                    <button class="ope1" id="btnNumber6" value="6">6</button>
+                    <button class="ope2" id="btnMultiply" value="*">*</button>
+                    <button class="ope1" id="btnPercentage" value="%">%</button>
+                    <button class="ope1" id="btnNumber1" value="1">1</button>
+                    <button class="ope1" id="btnNumber2" value="2">2</button>
+                    <button class="ope1" id="btnNumber3" value="3">3</button>
+                    <button class="ope2" id="btnSubtraction" value="-">
+                        -
+                    </button>
+                    <button class="ope1" id="btnReciprocal" value="1/x">
+                        1/x
+                    </button>
+                    <button class="ope1" id="btnNumber0" value="0">0</button>
+                    <button class="ope1" id="btnNegate" value="+/-">+/-</button>
+                    <button class="ope1" id="btnPoint" value=".">.</button>
+                    <button class="ope2" id="btnAddition" value="+">+</button>
+                    <button class="ope2" id="btnEvaluation" value="=">=</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="js/Display.js"></script>
+        <script type="module" src="js/Memory.js"></script>
+        <script type="module" src="js/Util.js"></script>
+        <script type="module" src="js/ErrorLib.js"></script>
+        <script type="module" src="js/Calculator.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

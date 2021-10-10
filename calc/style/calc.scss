@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 24px;
+}
+
+#calculator {
+    width: 302px;
+    border: 2px outset #d4d0c8;
+    background-color: #d4d0c8;
+    table-layout: fixed;
+}
+
+#display-container {
+}
+
+#head-control-container,
+#main-control-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#memory-display-container {
+}
+#reset-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#memory-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#operation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+col {
+    &.colLeftColumn {
+        /* 指定なし */
+    }
+
+    &.colCenterColumn {
+        width: 44px;
+    }
+
+    &.colRightColumn {
+        width: 50px;
+    }
+}
+
+td {
+    &.tdMainDisplay {
+        padding: 8px 0 10px 8px;
+    }
+
+    &.tdMemoryDisplay {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    &.tdClearButton {
+        padding-bottom: 5px;
+    }
+
+    &.tdMiddleRow {
+        padding-bottom: 1px;
+    }
+
+    &.tdBottomRow {
+        padding-bottom: 8px;
+    }
+
+    &.tdLeftColumn {
+        padding-left: 8px;
+    }
+}
+
+$widthButtonOperation: 42px;
+$heightButtonOperation: 26px;
+$widthButtonControl: 73px;
+$heightButtonControl: 26px;
+
+/* フォーム要素 */
+.ope1 {
+    width: $widthButtonOperation;
+    height: $heightButtonOperation;
+    background-color: transparent;
+    color: blue;
+}
+
+.ope2 {
+    width: $widthButtonOperation;
+    height: $heightButtonOperation;
+    background-color: transparent;
+    color: red;
+}
+
+#txtMainDisplay {
+    width: 268px;
+    height: 17px;
+    line-height: 16px;
+    padding-right: 6px;
+    border: 2px inset white;
+    font-size: 12px;
+    text-align: right;
+}
+
+#txtMemoryDisplay {
+    width: 28px;
+    height: 19px;
+    line-height: 16px;
+    border: 2px inset white;
+    background-color: transparent;
+    font-size: 12px;
+    text-align: center;
+}
+
+#btnBack {
+    width: $widthButtonControl;
+    height: $heightButtonControl;
+    background-color: transparent;
+    color: red;
+}
+
+#btnClearEnter {
+    width: $widthButtonControl;
+    margin-left: 3px;
+    height: $heightButtonControl;
+    background-color: transparent;
+    color: red;
+}
+
+#btnClear {
+    width: $widthButtonControl;
+    margin-left: 3px;
+    height: $heightButtonControl;
+    background-color: transparent;
+    color: red;
+}

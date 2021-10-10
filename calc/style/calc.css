@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 24px;
+}
+
+#calculator {
+  width: 302px;
+  border: 2px outset #d4d0c8;
+  background-color: #d4d0c8;
+  table-layout: fixed;
+}
+
+#head-control-container,
+#main-control-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+#reset-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#memory-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#operation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+col.colLeftColumn {
+  /* 指定なし */
+}
+col.colCenterColumn {
+  width: 44px;
+}
+col.colRightColumn {
+  width: 50px;
+}
+
+td.tdMainDisplay {
+  padding: 8px 0 10px 8px;
+}
+td.tdMemoryDisplay {
+  padding-bottom: 5px;
+  text-align: center;
+}
+td.tdClearButton {
+  padding-bottom: 5px;
+}
+td.tdMiddleRow {
+  padding-bottom: 1px;
+}
+td.tdBottomRow {
+  padding-bottom: 8px;
+}
+td.tdLeftColumn {
+  padding-left: 8px;
+}
+
+/* フォーム要素 */
+.ope1 {
+  width: 42px;
+  height: 26px;
+  background-color: transparent;
+  color: blue;
+}
+
+.ope2 {
+  width: 42px;
+  height: 26px;
+  background-color: transparent;
+  color: red;
+}
+
+#txtMainDisplay {
+  width: 268px;
+  height: 17px;
+  line-height: 16px;
+  padding-right: 6px;
+  border: 2px inset white;
+  font-size: 12px;
+  text-align: right;
+}
+
+#txtMemoryDisplay {
+  width: 28px;
+  height: 19px;
+  line-height: 16px;
+  border: 2px inset white;
+  background-color: transparent;
+  font-size: 12px;
+  text-align: center;
+}
+
+#btnBack {
+  width: 73px;
+  height: 26px;
+  background-color: transparent;
+  color: red;
+}
+
+#btnClearEnter {
+  width: 73px;
+  margin-left: 3px;
+  height: 26px;
+  background-color: transparent;
+  color: red;
+}
+
+#btnClear {
+  width: 73px;
+  margin-left: 3px;
+  height: 26px;
+  background-color: transparent;
+  color: red;
+}
+
+/*# sourceMappingURL=calc.css.map */
