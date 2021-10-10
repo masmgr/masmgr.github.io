@@ -1,77 +1,88 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Calculator_1 = require("./Calculator");
-window.onload = function () {
-    var mainDisplay = document.getElementById("txtMainDisplay");
-    var memoryDisplay = document.getElementById("txtMemoryDisplay");
-    var calc = new Calculator_1.Calculator({
+import { calcButtonToMethods, Calculator } from "./Calculator";
+
+window.onload = () => {
+    const mainDisplay = document.getElementById(
+        "txtMainDisplay"
+    ) as HTMLInputElement;
+    const memoryDisplay = document.getElementById(
+        "txtMemoryDisplay"
+    ) as HTMLInputElement;
+
+    const calc = new Calculator({
         MainDisplay: mainDisplay,
         MemoryDisplay: memoryDisplay,
         fractionDigits: 8,
     });
-    var _loop_1 = function (name_1) {
-        // eslint-disable-next-line no-prototype-builtins
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        var element = document.getElementById(name_1);
-        element.addEventListener("click", function () {
-            calc.inputKey(name_1, element.value);
-            return false;
-        });
-    };
+
     /*
      * 電卓ボタン名 → Calculator のメソッド名
      */
+
     /*
      * 電卓ボタンの onclick と Calculator のメソッドを関連付け
      */
-    for (var _i = 0, calcButtonToMethods_1 = Calculator_1.calcButtonToMethods; _i < calcButtonToMethods_1.length; _i++) {
-        var name_1 = calcButtonToMethods_1[_i];
-        _loop_1(name_1);
+    for (const name of calcButtonToMethods) {
+        // eslint-disable-next-line no-prototype-builtins
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        const element = document.getElementById(name)! as HTMLInputElement;
+        element.addEventListener("click", () => {
+            calc.inputKey(name, element.value);
+            return false;
+        });
     }
+
     /*
      * キーコード → 電卓ボタン名
      */
-    var keyCodeToCalcButton = {
-        8: "btnBack",
-        46: "btnClearEnter",
-        27: "btnClear",
-        13: "btnEvaluation",
-        120: "btnNegate",
-    };
+    const keyCodeToCalcButton: { [name: number]: string } = {
+        8: "btnBack", // [BackSpace]
+        46: "btnClearEnter", // [Del]
+        27: "btnClear", // [Esc]
+        13: "btnEvaluation", // [Enter]
+        120: "btnNegate", // [F9]
+    } as const;
+
     /*
      * キーコード ([Ctrl] 修飾) → 電卓ボタン名
      */
-    var keyCodeWithCtrlToCalcButton = {
-        76: "btnMemoryClear",
-        82: "btnMemoryRead",
-        77: "btnMemoryStore",
-        80: "btnMemoryAdd",
-    };
+    const keyCodeWithCtrlToCalcButton: {
+        [name: number]: string;
+    } = {
+        76: "btnMemoryClear", // [L]
+        82: "btnMemoryRead", // [R]
+        77: "btnMemoryStore", // [M]
+        80: "btnMemoryAdd", // [P]
+    } as const;
+
     /*
      * 押下キーをキーコードで取得するので、動作がデバイスに依存する。
      * イベントの発生順は、keydown → keypress → keyup。
      * keydown をキャンセルすると、keypress が発生しない。
      */
-    document.addEventListener("keydown", function (event) {
+    document.addEventListener("keydown", (event) => {
         if (event.altKey) {
             return true;
         }
-        var code = event.keyCode;
-        var name = event.ctrlKey
+        const code = event.keyCode;
+        const name = event.ctrlKey
             ? keyCodeWithCtrlToCalcButton[code]
             : keyCodeToCalcButton[code];
+
         if (name != null) {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            var element = document.getElementById(name);
+            const element: HTMLElement = document.getElementById(name)!;
             element.click();
             return false;
         }
         return true;
     });
+
     /*
      * 印字文字 → 電卓ボタン名
      */
-    var printableCharToCalcButton = {
+    const printableCharToCalcButton: {
+        [name: string]: string;
+    } = {
         "1": "btnNumber1",
         "2": "btnNumber2",
         "3": "btnNumber3",
@@ -91,28 +102,32 @@ window.onload = function () {
         "@": "btnSquareRoot",
         "%": "btnPercentage",
         R: "btnReciprocal",
-    };
+    } as const;
+
     /*
      * 押下キーを文字コードで取得できるので、動作がデバイスに依存しない。
      * IE では、[Alt]/[Ctrl] 修飾時や非印字文字は、keypress が発生しない。
      * 代わりに、keydown で処理する必要がある。
      */
-    document.addEventListener("keypress", function (event) {
+    document.addEventListener("keypress", (event) => {
         if (event.altKey || event.ctrlKey) {
             return true;
         } // Firefox (修飾キー)
         if (event.charCode === 0) {
             return true;
         } // Firefox (非印字文字)
-        var code = event.charCode || event.keyCode; // 文字コード
-        var ch = String.fromCharCode(code).toUpperCase();
-        var name = printableCharToCalcButton[ch];
+
+        const code = event.charCode || event.keyCode; // 文字コード
+        const ch = String.fromCharCode(code).toUpperCase();
+
+        const name = printableCharToCalcButton[ch];
         if (name) {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-            var element = document.getElementById(name);
+            const element = document.getElementById(name)!;
             element.click();
             return false;
         }
+
         return true;
     });
 };
